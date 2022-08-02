@@ -1,8 +1,14 @@
 const path = require('path');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
     entry: './src/index.js',
+    plugin:[
+        new HTMLWebpackPlugin({
+            title: 'To-do List',
+        }),
+    ],
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
