@@ -16,6 +16,20 @@ export default class ToDo{
     getTitle(){
         return this.#title;
     }
-    
+    getDescription(){
+        return this.#description;
+    }
+    getDueDate(){
+        return this.#dueDate;
+    }
+    getPriority(){
+        return this.#priority;
+    }
+    getNotes(){
+        return this.#notes;
+    }
+    getChecklist(){
+        return this.#checklist;
+    }
 
 };
