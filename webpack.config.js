@@ -19,5 +19,8 @@ module.exports = {
                 use: 'asset/resource',
             },
         ],
-    }
+    },
+    optimization: {
+        runtimeChunk: 'single',
+    },
 };
