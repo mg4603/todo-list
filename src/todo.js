@@ -13,4 +13,8 @@ export default class ToDo{
         this.#notes = notes;
         this.#checklist = checklist;
     }
+    getTitle(){
+        return this.#title;
+    }
+
 };
