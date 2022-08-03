@@ -1,4 +1,4 @@
-class checklist_item{
+class CheckListItem{
     #status = 0;
     #title;
     constructor(title){
@@ -47,8 +47,23 @@ export default class ToDo{
     getChecklist(){
         return this.#checklist;
     }
+    
+    editTitle(title){
+        this.#title = title;
+    }
+    editDescription(description){
+        this.#description = description;
+    }
+    editDueDate(date){
+        this.#date = date;
+    }
+    editPriority(priority){
+        this.#priority = priority;
+    }
     editNotes(newNotes){
         this.#notes = newNotes;
     }
-
+    addCheckListItem(item_title){
+        this.#checklist.push(new CheckListItem(item_title));
+    }
 };
